@@ -58,7 +58,8 @@
         <img class="card-img-top" src="../assets/palacsinta.jpg" alt="Card image">
         <div class="card-body">
           <h4 class="card-title">Palacsinta</h4>
-          <p class="card-text">e text some example text. John Some examplDoe is an architect and engineer</p>
+          <p class="card-text">Elkészítési idő: </p>
+          <p class="card-text nehezseg">Könyű</p>
           <a href="#" class="btn btn-primary">Részletek</a>
         </div>
       </div>
