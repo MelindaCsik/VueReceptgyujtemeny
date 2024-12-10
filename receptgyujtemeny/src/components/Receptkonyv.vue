@@ -28,7 +28,22 @@
     </nav>
   </header>
 
- 
+  <div class="mb-3">
+    <input type="text" class="form-control" id="exampleFormControlInput1" placeholder="Keress egy recepetet...">
+  </div>
+
+  <select class="form-select" aria-label="Default select example">
+    <option selected>Minden nehézség</option>
+    <option value="1">Könyű</option>
+    <option value="2">Közepes</option>
+    <option value="3">Nehéz</option>
+  </select>
+
+  <select class="form-select" aria-label="Default select example">
+    <option selected>Elkészítési idő szerint</option>
+    <option value="1">Csökenő</option>
+    <option value="2">Növekvő</option>
+  </select>
 
   <footer></footer>
 </template>
