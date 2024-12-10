@@ -26,24 +26,45 @@
         </div>
       </div>
     </nav>
+
+    <div class="mb-3">
+      <input type="text" class="form-control" id="exampleFormControlInput1" placeholder="Keress egy recepetet...">
+    </div>
+
+    <select class="form-select" aria-label="Default select example">
+      <option selected>Minden nehézség</option>
+      <option value="1">Könyű</option>
+      <option value="2">Közepes</option>
+      <option value="3">Nehéz</option>
+    </select>
+
+    <select class="form-select" aria-label="Default select example">
+      <option selected>Elkészítési idő szerint</option>
+      <option value="1">Csökenő</option>
+      <option value="2">Növekvő</option>
+    </select>
   </header>
+  
+  <main>
+    <div class="card" style="width:400px">
+      <img class="card-img-top" src="../assets/palacsinta.jpg" alt="Card image" style="width:100%">
+      <div class="card-body">
+        <h4 class="card-title">Palacsinta</h4>
+        <p class="card-text">e text some example text. John Some examplDoe is an architect and engineer</p>
+        <a href="#" class="btn btn-primary">See Profile</a>
+      </div>
+    </div>
 
-  <div class="mb-3">
-    <input type="text" class="form-control" id="exampleFormControlInput1" placeholder="Keress egy recepetet...">
-  </div>
+    <div class="card" style="width:400px">
+      <img class="card-img-top" src="../assets/palacsinta.jpg" alt="Card image" style="width:100%">
+      <div class="card-body">
+        <h4 class="card-title">Palacsinta</h4>
+        <p class="card-text">e text some example text. John Some examplDoe is an architect and engineer</p>
+        <a href="#" class="btn btn-primary">See Profile</a>
+      </div>
+    </div>
 
-  <select class="form-select" aria-label="Default select example">
-    <option selected>Minden nehézség</option>
-    <option value="1">Könyű</option>
-    <option value="2">Közepes</option>
-    <option value="3">Nehéz</option>
-  </select>
-
-  <select class="form-select" aria-label="Default select example">
-    <option selected>Elkészítési idő szerint</option>
-    <option value="1">Csökenő</option>
-    <option value="2">Növekvő</option>
-  </select>
+  </main>
 
   <footer></footer>
 </template>
