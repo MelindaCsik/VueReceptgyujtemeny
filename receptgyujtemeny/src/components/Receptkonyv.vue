@@ -71,15 +71,5 @@
 </template>
 
 <style scoped>
-.navbar{
-  padding: 10px 50px 10px 50px;
-}
-.card {
-  width: 350px;
-  margin: 25px;
-  padding: 15px;
-}
-.card-img-top {
- width: 100%;
-}
+
 </style>
