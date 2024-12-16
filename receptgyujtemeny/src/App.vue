@@ -1,5 +1,60 @@
 <script setup>
-import Receptkonyv from './components/Receptkonyv.vue'
+import Kereses from './components/Kereses.vue';
+import { recipes as recipesData } from './data/recipes';
+import Recipe from './classes/Recipe';
+import { ref } from 'vue'
+
+
+const recipes = ref([]);
+recipesData.forEach((recipe) => {
+  recipes.value.push(new Recipe(
+    recipe.id,
+    recipe.name,
+    recipe.preparation_time,
+    recipe.difficulty,
+    recipe.details,
+    recipe.image
+  ));
+})
+
+const ujRecipe = ref({
+  name: "",
+  prepTime: 0,
+  difficulty: -1,
+  details: "",
+  image: ""
+})
+
+const addRecipe = () => {
+  const newRecipe = new Recipe(
+    recipes.value.length + 1,
+    ujRecipe.value.name,
+    ujRecipe.value.prepTime,
+    ujRecipe.value.difficulty,
+    ujRecipe.value.details,
+    ujRecipe.value.image
+  )
+  console.log(newRecipe.getDetails());
+  
+
+  if (newRecipe.megfelelo()) {
+    alert("Hibás recept adatok!")
+  }
+  else{
+    alert(`Recept sikeresen hozzáadva: ${ujRecipe.value.name}`)
+    recipes.value.push(newRecipe);
+  }
+
+
+  ujRecipe.value = {
+    name: "",
+    prepTime: 0,
+    difficulty: -1,
+    details: "",
+    image: ""
+  }
+}
+
 </script>
 
 <template>
@@ -86,7 +141,4 @@ select:hover,
   cursor: pointer;
 }
 
-</style>
-
-<style scoped>
 </style>
