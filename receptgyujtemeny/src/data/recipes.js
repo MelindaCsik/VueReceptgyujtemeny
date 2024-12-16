@@ -5,7 +5,7 @@ export const recipes = [
         preparation_time: 50,
         difficulty: 0,
         details: "A magyar konyha egyik legismertebb étele, szaftos marhahússal, zöldségekkel és fűszerekkel.",
-        image: "../assets/gulyasleves.jpeg"
+        image: "http://localhost:5173/src/assets/gulyasleves.jpeg"
     },
     {
         id: 2,
@@ -13,7 +13,7 @@ export const recipes = [
         preparation_time: 60,
         difficulty: 1,
         details: "A magyar konyha egyik legismertebb étele, szaftos marhahússal, zöldségekkel és fűszerekkel.",
-        image: "../assets/paprikaskrumpli.jpg"
+        image: "http://localhost:5173/src/assets/paprikaskrumpli.jpg"
     },
     {
         id: 3,
@@ -21,7 +21,7 @@ export const recipes = [
         preparation_time: 20,
         difficulty: 2,
         details: "A magyar konyha egyik legismertebb étele, szaftos marhahússal, zöldségekkel és fűszerekkel.",
-        image: "../assets/palacsinta.jpg"
+        image: "http://localhost:5173/src/assets/palacsinta.jpg"
     },
     {
         id: 4,
@@ -29,6 +29,6 @@ export const recipes = [
         preparation_time: 20,
         difficulty: 0,
         details: "A magyar konyha egyik legismertebb étele, szaftos marhahússal, zöldségekkel és fűszerekkel.",
-        image: "../assets/turogomboc.jpg"
+        image: "http://localhost:5173/src/assets/turogomboc.jpg"
     }
 ];
