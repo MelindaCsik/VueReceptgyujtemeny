@@ -5,14 +5,33 @@ export default class Recipe {
     #difficulty
     #details
     #image
+
     constructor(id, name, preparation_time, difficulty, details, image) {
-        this.setId(id)
-        this.setName(name)
-        this.setPreparation_time(preparation_time)
-        this.setDifficulty(parseInt(difficulty))
-        this.setDetails(details)
-        this.setImage(image)
+        this.#id = id
+        this.#name = name
+        this.#preparation_time = preparation_time
+        this.#difficulty = parseInt(difficulty)
+        this.#details = details
+        this.#image = image
+
+        this.setId = this.setId.bind(this)
+        this.getId = this.getId.bind(this)
+        this.getName = this.getName.bind(this)
+        this.getPreparation_time = this.getPreparation_time.bind(this)
+        this.getDifficulty = this.getDifficulty.bind(this)
+        this.getDifficultyName = this.getDifficultyName.bind(this)
+        this.getDifficultyClass = this.getDifficultyClass.bind(this)
+        this.getDetails = this.getDetails.bind(this)
+        this.getImage = this.getImage.bind(this)
+        this.megfelelo = this.megfelelo.bind(this)
     }
+
+    megfelelo() {
+        return !(this.#id !== "" && this.#name !== "" && this.#preparation_time !== "" &&
+            this.#difficulty !== "" && this.#details !== "" && this.#image !== "" &&
+            this.#difficulty != -1 && this.#preparation_time >= 0)
+    }
+
     setId(id) {
         this.#id = id
     }
@@ -45,6 +64,7 @@ export default class Recipe {
         return this.#difficulty
     }
 
+    
     setDetails(details) {
         this.#details = details
     }
@@ -60,4 +80,32 @@ export default class Recipe {
     getImage() {
         return this.#image;
     }
+    
+    getDifficultyName() {
+        switch (this.getDifficulty()) {
+            case 0:
+                return 'Könnyű'
+            case 1:
+                return 'Közepes'
+            case 2:
+                return 'Nehéz'
+            default:
+                return 'Ismeretlen'
+        }
+    }
+
+    getDifficultyClass() {
+        switch (this.getDifficulty()) {
+            case 0:
+                return 'text-bg-success'
+            case 1:
+                return 'text-bg-warning'
+            case 2:
+                return 'text-bg-danger'
+            default:
+                return ''
+        }
+    }
+
+
 }
