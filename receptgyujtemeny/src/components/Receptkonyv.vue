@@ -17,7 +17,7 @@
               <a class="nav-link" href="#">Receptek</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="#">Új recept</a>
+              <a class="nav-link" href="Ujrecept.vue">Új recept</a>
             </li>
             <li class="nav-item">
               <a class="nav-link" href="#">Kedvencek</a>
