@@ -63,33 +63,6 @@
           <a href="#" class="btn btn-primary">Részletek</a>
         </div>
       </div>
-
-      <div class="card col-lg-4">
-        <img class="card-img-top" src="../assets/palacsinta.jpg" alt="Card image">
-        <div class="card-body">
-          <h4 class="card-title">Palacsinta</h4>
-          <p class="card-text">e text some example text. John Some examplDoe is an architect and engineer</p>
-          <a href="#" class="btn btn-primary">See Profile</a>
-        </div>
-      </div>
-
-      <div class="card col-lg-4">
-        <img class="card-img-top" src="../assets/palacsinta.jpg" alt="Card image">
-        <div class="card-body">
-          <h4 class="card-title">Palacsinta</h4>
-          <p class="card-text">e text some example text. John Some examplDoe is an architect and engineer</p>
-          <a href="#" class="btn btn-primary">See Profile</a>
-        </div>
-      </div>
-
-      <div class="card col-lg-4">
-        <img class="card-img-top" src="../assets/palacsinta.jpg" alt="Card image">
-        <div class="card-body">
-          <h4 class="card-title">Palacsinta</h4>
-          <p class="card-text">e text some example text. John Some examplDoe is an architect and engineer</p>
-          <a href="#" class="btn btn-primary">See Profile</a>
-        </div>
-      </div>
     </div>
 
   </main>
